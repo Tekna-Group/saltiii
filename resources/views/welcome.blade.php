@@ -1,99 +1,649 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
 
-        <title>Laravel</title>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+  <title>Saltiii</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+  <!-- Favicons -->
+  <link href="{{asset('/project/assets/img/favicon.png')}}" rel="icon">
+  <link href="{{asset('/project/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
-            .full-height {
-                height: 100vh;
-            }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+  <!-- Vendor CSS Files -->
+  <link href="{{asset('/project/assets/vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{asset('/project/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{asset('/project/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{asset('/project/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{asset('/project/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
-            .position-ref {
-                position: relative;
-            }
+  <!-- Template Main CSS File -->
+  <link href="{{asset('/project/assets/css/style.css')}}" rel="stylesheet">
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+</head>
 
-            .content {
-                text-align: center;
-            }
+<body>
 
-            .title {
-                font-size: 84px;
-            }
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+      <div id="logo">
+        <h1><a href="index.html"><span>S</span>altiii</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="/project/assets/img/logo.png" alt="" title="" /></a>-->
+      </div>
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#features">Features</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+    </div>
+  </header><!-- End Header -->
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Welcome to Saltiii</h1>
+      <h2>Optimizing Project Management, Timekeeping, and Payroll in One System</h2>
+      <img src="/project/assets/img/hero-img.png" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
+      <a href="#get-started" class="btn-get-started scrollto">Get Started</a>
+      <div class="btns">
+        <a href="#"><i class="fa fa-apple fa-3x"></i> App Store</a>
+        <a href="#"><i class="fa fa-play fa-3x"></i> Google Play</a>
+        <a href="#"><i class="fa fa-windows fa-3x"></i> windows</a>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+  <main id="main">
+
+    <!-- ======= Get Started Section ======= -->
+    <section id="get-started" class="padd-section text-center">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+
+          <h2>3 in one Solution </h2>
+          <p class="separator">This comprehensive solution prioritizes user-friendliness, scalability, and efficiency, ensuring a seamless experience tailored for businesses of any size.</p>
+
         </div>
-    </body>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="feature-block">
+
+              <img src="{{asset('/project/assets/img/svg/tools.svg')}}" alt="img">
+              <h4>Project Management Hub</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              <a href="#">read more</a>
+
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="feature-block">
+
+              <img src="{{asset('/project/assets/img/svg/timekeeping.png')}}" alt="img">
+              <h4>Timekeeping Tracker</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              <a href="#">read more</a>
+
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="feature-block">
+
+              <img src="{{asset('/project/assets/img/svg/payroll.png')}}" alt="img">
+              <h4>Payroll Management Center</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              <a href="#">read more</a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End Get Started Section -->
+
+    <section id="features" class="padd-section text-center">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+          <h2>Amazing Features.</h2>
+          <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <img src="{{asset('/project/assets/img/svg/admin-panel.png')}}" alt="img">
+              <h4>Unified Dashboard</h4>
+              <p>A centralized dashboard offers a comprehensive overview of project progress, employee hours, and payroll status in real-time, enhancing transparency and decision-making.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <img src="{{asset('/project/assets/img/svg/file-management.png')}}" alt="img">
+              <h4>Contract Management</h4>
+              <p>Seamlessly onboard and manage contract-based employees within the system, including tracking contract terms, rates, and project assignments.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <img src="{{asset('/project/assets/img/svg/salary.png')}}" alt="img">
+              <h4>Flexible Payroll Options</h4>
+              <p>Support various payment structures for contract-based employees, such as hourly rates, fixed fees, or milestone-based payments, and automate payroll calculations accordingly.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <img src="{{asset('/project/assets/img/svg/good-feedback.png')}}" alt="img">
+              <h4>Contractor Performance Evaluation</h4>
+              <p>Utilize performance tracking tools to assess the productivity and performance of contract-based employees, facilitating informed decision-making regarding contract renewals or terminations.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <img src="{{asset('/project/assets/img/svg/salary_data.png')}}" alt="img">
+              <h4>Payroll Automation</h4>
+              <p>Automate payroll calculations and processing, reducing manual errors and ensuring timely and accurate payments to employees.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <img src="{{asset('/project/assets/img/svg/money-management.png')}}" alt="img">
+              <h4>Expense Management</h4>
+              <p>Capture and categorize project-related expenses, facilitating accurate budget tracking and expense reimbursement for employees.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <img src="{{asset('/project/assets/img/svg/qa.png')}}" alt="img">
+              <h4>Assignment and Tracking</h4>
+              <p>Assign tasks and subtasks to contract-based employees with ease, and track their progress in real-time, ensuring accountability and transparency throughout the project lifecycle.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <img src="{{asset('/project/assets/img/svg/delegate.png')}}" alt="img">
+              <h4>Task and Subtask Organization</h4>
+              <p>Effortlessly organize project tasks and subtasks hierarchically within the system, providing clarity and structure to project workflows for both employees and employers.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="padd-section text-center">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+
+          <h2>Team Member</h2>
+          <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="team-block bottom">
+              <img src="{{asset('/project/assets/img/team/1.jpg')}}" class="img-responsive" alt="img">
+              <div class="team-content">
+                <ul class="list-unstyled">
+                  <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                  <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                  <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+                <span>manager</span>
+                <h4>Kimberly Tran</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="team-block bottom">
+              <img src="{{asset('/project/assets/img/team/2.jpg')}}" class="img-responsive" alt="img">
+              <div class="team-content">
+                <ul class="list-unstyled">
+                  <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                  <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                  <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+                <span>manager</span>
+                <h4>Kimberly Tran</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+            <div class="team-block bottom">
+              <img src="{{asset('/project/assets/img/team/3.jpg')}}" class="img-responsive" alt="img">
+              <div class="team-content">
+                <ul class="list-unstyled">
+                  <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                  <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                  <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+                <span>manager</span>
+                <h4>Kimberly Tran</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+            <div class="team-block bottom">
+              <img src="{{asset('/project/assets/img/team/4.jpg')}}" class="img-responsive" alt="img">
+              <div class="team-content">
+                <ul class="list-unstyled">
+                  <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                  <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                  <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+                <span>manager</span>
+                <h4>Kimberly Tran</h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="padd-section text-center">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+
+          <div class="col-md-8">
+
+            <div class="testimonials-content">
+              <div id="carousel-example-generic" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner" role="listbox">
+
+                  <div class="carousel-item  active">
+                    <div class="top-top">
+
+                      <h2>Our Users Speack volumes us</h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries.</p>
+                      <h4>Kimberly Tran<span>manager</span></h4>
+
+                    </div>
+                  </div>
+
+                  <div class="carousel-item ">
+                    <div class="top-top">
+
+                      <h2>Our Users Speack volumes us</h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries.</p>
+                      <h4>Henderson<span>manager</span></h4>
+
+                    </div>
+                  </div>
+
+                  <div class="carousel-item ">
+                    <div class="top-top">
+
+                      <h2>Our Users Speack volumes us</h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries.</p>
+                      <h4>David Spark<span>manager</span></h4>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="btm-btm">
+
+                  <ul class="list-unstyled carousel-indicators">
+                    <li data-bs-target="#carousel-example-generic" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carousel-example-generic" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carousel-example-generic" data-bs-slide-to="2"></li>
+                  </ul>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="padd-section text-cente">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+
+          <h2>Meet With Price</h2>
+          <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-md-6 col-lg-3">
+            <div class="block-pricing">
+              <div class="pricing-table">
+                <h4>basic</h4>
+                <h2>$29</h2>
+                <ul class="list-unstyled">
+                  <li><b>4 GB</b> Ram</li>
+                  <li><b>7/24</b> Tech Support</li>
+                  <li><b>40 GB</b> SSD Cloud Storage</li>
+                  <li>Monthly Backups</li>
+                  <li>Palo Protection</li>
+                </ul>
+                <div class="table_btn">
+                  <a href="#" class="btn"><i class="bi bi-cart"></i> Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="block-pricing">
+              <div class="pricing-table">
+                <h4>PERSONAL</h4>
+                <h2>$29</h2>
+                <ul class="list-unstyled">
+                  <li><b>4 GB</b> Ram</li>
+                  <li><b>7/24</b> Tech Support</li>
+                  <li><b>40 GB</b> SSD Cloud Storage</li>
+                  <li>Monthly Backups</li>
+                  <li>Palo Protection</li>
+                </ul>
+                <div class="table_btn">
+                  <a href="#" class="btn"><i class="bi bi-cart"></i> Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="block-pricing">
+              <div class="pricing-table">
+                <h4>BUSINESS</h4>
+                <h2>$29</h2>
+                <ul class="list-unstyled">
+                  <li><b>4 GB</b> Ram</li>
+                  <li><b>7/24</b> Tech Support</li>
+                  <li><b>40 GB</b> SSD Cloud Storage</li>
+                  <li>Monthly Backups</li>
+                  <li>Palo Protection</li>
+                </ul>
+                <div class="table_btn">
+                  <a href="#" class="btn"><i class="bi bi-cart"></i> Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="block-pricing">
+              <div class="pricing-table">
+                <h4>profeesional</h4>
+                <h2>$29</h2>
+                <ul class="list-unstyled">
+                  <li><b>4 GB</b> Ram</li>
+                  <li><b>7/24</b> Tech Support</li>
+                  <li><b>40 GB</b> SSD Cloud Storage</li>
+                  <li>Monthly Backups</li>
+                  <li>Palo Protection</li>
+                </ul>
+                <div class="table_btn">
+                  <a href="#" class="btn"><i class="bi bi-cart"></i> Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Newsletter Section ======= -->
+    <section id="newsletter" class="newsletter text-center">
+      <div class="overlay padd-section">
+        <div class="container" data-aos="zoom-in">
+
+          <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-6">
+              <form class="d-flex" method="POST" action="#">
+                <input type="email" class="form-control " placeholder="Email Adress" name="email">
+                <button type="submit" class="btn btn-default"><i class="bi bi-location-arrow"></i>Subscribe</button>
+              </form>
+            </div>
+          </div>
+
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+          </ul>
+
+        </div>
+      </div>
+    </section><!-- End Newsletter Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="padd-section">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+          <h2>Contact</h2>
+          <p class="separator">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-3 col-md-4">
+
+            <div class="info">
+              <div>
+                <i class="bi bi-geo-alt"></i>
+                <p>A108 Adam Street<br>New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <p>info@example.com</p>
+              </div>
+
+              <div>
+                <i class="bi bi-phone"></i>
+                <p>+1 5589 55488 55s</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12 col-lg-4">
+          <div class="footer-logo">
+
+            <a class="navbar-brand" href="#">Saltiii</a>
+            <p>Project Management, Timekeeping, and Payroll in One System.</p>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="list-menu">
+
+            <h4>Abou Us</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Features item</a></li>
+              <li><a href="#">Live streaming</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="list-menu">
+
+            <h4>Abou Us</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Features item</a></li>
+              <li><a href="#">Live streaming</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="list-menu">
+
+            <h4>Support</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="#">faq</a></li>
+              <li><a href="#">Editor help</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="list-menu">
+
+            <h4>Abou Us</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Features item</a></li>
+              <li><a href="#">Live streaming</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="copyrights">
+      <div class="container">
+        <p>&copy; Copyrights Saltiii . All rights reserved.</p>
+        
+      </div>
+    </div>
+
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{asset('/project/assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{asset('/project/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('/project/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{asset('/project/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{asset('/project/assets/vendor/php-email-form/validate.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{asset('/project/assets/js/main.js')}}"></script>
+
+</body>
+
 </html>

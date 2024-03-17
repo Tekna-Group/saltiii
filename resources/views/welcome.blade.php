@@ -76,7 +76,7 @@
     <div class="hero-container" data-aos="fade-in">
       <h1>Welcome to Saltiii</h1>
       <h2>Optimizing Project Management, Timekeeping, and Payroll in One System</h2>
-      <img src="/project/assets/img/hero-img.png" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
+      <img src="{{asset('/project/assets/img/hero-img.png')}}" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
       <a href="#get-started" class="btn-get-started scrollto">Get Started</a>
       <div class="btns">
         <a href="#"><i class="fa fa-apple fa-3x"></i> App Store</a>

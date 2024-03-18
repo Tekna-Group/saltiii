@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Saltiii</title>
+  <title>saltiii</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{asset('/project/assets/img/favicon.png')}}" rel="icon">
-  <link href="{{asset('/project/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <link href="{{asset('/project/assets/img/icon_salt.png')}}" rel="icon">
+  <link href="{{asset('/project/assets/img/icon_salt.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
@@ -35,9 +35,8 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div id="logo">
-        <h1><a href="index.html"><span>S</span>altiii</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="/project/assets/img/logo.png" alt="" title="" /></a>-->
+        {{-- <h1><a href="index.html"><span>S</span>altiii</a></h1> --}}
+     <a href="{{url('/')}}"><img src="{{asset('/project/assets/img/logo_salt.png')}}" height='80px' alt="" title="" /></a>
       </div>
 
       <nav id="navbar" class="navbar">

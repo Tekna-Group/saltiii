@@ -84,12 +84,12 @@
             <div class="row">
               <div class="col-8">
                 <div class="numbers">
-                  <p class="text-sm mb-0 text-uppercase font-weight-bold">For Final Pay</p>
+                  <p class="text-sm mb-0 text-uppercase font-weight-bold">Done task today</p>
                   <h5 class="font-weight-bolder">
-                    0
+                    10
                   </h5>
                   <p class="mb-0">
-                    <span class="text-success text-sm font-weight-bolder">0</span> closed
+                    <span class="text-success text-sm font-weight-bolder">0</span> Yesterday
                   </p>
                 </div>
               </div>
@@ -107,7 +107,7 @@
       <div class="col-lg-7 mb-lg-0 mb-4">
         <div class="card z-index-2 h-100">
           <div class="card-header pb-0 pt-3 bg-transparent">
-            <h6 class="text-capitalize">Attrition </h6>
+            <h6 class="text-capitalize">Performance </h6>
             <p class="text-sm mb-0">
               <i class="fa fa-arrow-up text-success"></i>
               <span class="font-weight-bold">4% more</span> last 2023
@@ -123,47 +123,46 @@
       <div class="col-lg-5 mb-lg-0 mb-4">
         <div class="card mb-4">
             <div class="card-header pb-0">
-              <h6>Resinged Employees (Pending)</h6>
+              <h6>Pending Projects</h6>
             </div>
             <div class="card-body px-0 pt-0 pb-2">
               <div class="table-responsive p-0">
                 <table class="table align-items-center mb-0">
                   <thead>
                     <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Employee</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Information</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Last Date</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Filed Date</th>
-                      <th class="text-secondary  text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"></th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Title</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Team</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Deadline</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Last Update</th>
+                      <th class="text-secondary  text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Total Task</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>
                         <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user1">
-                          </div>
+                          
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">John Michael</h6>
-                            <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
+                            <h6 class="mb-0 text-sm">Title</h6>
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">Manager</p>
-                        <p class="text-xs text-secondary mb-0">Organization</p>
+                        <div>
+                            <img src="{{url('login_design/assets/img/team-2.jpg')}}" class="avatar avatar-sm me-3" alt="user1">
+                          </div>
+                       
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
+                        
+                        <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
                       </td>
                       <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
                       </td>
                       <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
-                        </a>
+                        
+                        <span class="badge badge-sm bg-gradient-success">10</span>
                       </td>
                     </tr>
                   </tbody>
@@ -173,7 +172,7 @@
           </div>
       </div>
     </div>
-    <div class="row mt-4">
+    {{-- <div class="row mt-4">
       <div class="col-lg-7 mb-lg-0 mb-4">
         <div class="card ">
           <div class="card-header pb-0 p-3">
@@ -380,6 +379,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
   </div>
 @endsection

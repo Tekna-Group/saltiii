@@ -31,7 +31,7 @@
                         <label class="form-check-label" for="rememberMe">Remember me</label>
                         </div>
                         <div class="text-center">
-                        <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Sign in</button>
+                                <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Sign in</button>
                         </div>
                     </div>
                 </form>
@@ -40,9 +40,16 @@
                         <strong>{{$errors->first()}}</strong>
                     </div>
                 @endif
+                
+                <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                    <p class="mb-4 text-sm mx-auto">
+                      Don't have an account?
+                      <a href="{{url('register')}}" class="text-primary text-gradient font-weight-bold">Sign up</a>
+                    </p>
+                  </div>
                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
                   <p class="mb-4 text-sm mx-auto">
-                    <a href="{{ route('password.request') }}" class="text-primary text-gradient font-weight-bold">Forgot password?</a>
+                    
                   </p>
                 </div>
               </div>
